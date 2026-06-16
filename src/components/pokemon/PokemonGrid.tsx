@@ -269,19 +269,17 @@ export function PokemonGrid({ initialItems, totalCount }: PokemonGridProps) {
       </AnimatePresence>
 
       {/* Full Pokémon Detail Overlay Modal */}
-      <AnimatePresence>
-        {selectedPokemon && transitionState === 'done' && (
-          <PokemonDetail
-            key={`detail-${selectedPokemon.id}`}
-            pokemonId={selectedPokemon.id}
-            onClose={() => {
-              setTransitionState('idle');
-              setSelectedPokemon(null);
-              setClickedCardRect(null);
-            }}
-          />
-        )}
-      </AnimatePresence>
+      {selectedPokemon && transitionState === 'done' && (
+        <PokemonDetail
+          key={`detail-${selectedPokemon.id}`}
+          pokemonId={selectedPokemon.id}
+          onClose={() => {
+            setTransitionState('idle');
+            setSelectedPokemon(null);
+            setClickedCardRect(null);
+          }}
+        />
+      )}
     </div>
   );
 }
