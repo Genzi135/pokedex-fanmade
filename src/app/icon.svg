@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Outer dark border for separation and visual contrast -->
+  <circle cx="256" cy="256" r="248" fill="#0f172a" />
+  
+  <!-- Main dark slate bottom hemisphere base -->
+  <circle cx="256" cy="256" r="236" fill="#1e293b" />
+  
+  <!-- Indigo Top Hemisphere -->
+  <path d="M 20 256 A 236 236 0 0 1 492 256 Z" fill="#6366f1" />
+  
+  <!-- Subtle 3D shadow on the bottom of the indigo hemisphere -->
+  <path d="M 20 256 A 236 236 0 0 1 492 256 A 236 45 0 0 1 20 256 Z" fill="#4338ca" opacity="0.4" />
+  
+  <!-- Center Horizontal Slate Dividing Band -->
+  <rect x="18" y="238" width="476" height="36" fill="#0f172a" />
+  
+  <!-- Outer Center Button Circle -->
+  <circle cx="256" cy="256" r="76" fill="#0f172a" />
+  
+  <!-- Inner Center Cyan Button Circle -->
+  <circle cx="256" cy="256" r="52" fill="#06b6d4" />
+  
+  <!-- Smallest Inner Light Cyan Button Circle for depth -->
+  <circle cx="256" cy="256" r="32" fill="#22d3ee" />
+  
+  <!-- Glossy 3D Highlight curve on the top-left of the indigo dome -->
+  <path d="M 80 160 A 200 200 0 0 1 220 56" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.35" />
+</svg>
